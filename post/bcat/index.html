@@ -1,216 +1,366 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" >
+<html lang="en">
 
-<title>BCAT  | Grideaasas</title>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>QT上位机软件 - bytecat</title>
+<link rel="shortcut icon" href="https://bytecat-cc.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://bytecat-cc.github.io/media/css/tailwind.css">
+<link rel="stylesheet" href="https://bytecat-cc.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="QT上位机软件 - bytecat - Atom Feed" href="https://bytecat-cc.github.io/atom.xml">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://bytecat-cc.github.io/index.html/favicon.ico?v=1684244401606">
-<link rel="stylesheet" href="https://bytecat-cc.github.io/index.html/styles/main.css">
+  <meta name="description" content="🔗 传感器挂箱客户端
 
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="1.XXX
+🔗 红外热成像采集软件
 
 
-1.XXX
+🔗 LoRa多节点通讯测试系统
 
 
-1.XXX
-
-1.XXX
+🔗 机械臂实验控制平台
 
 
-1.XXX
-
-1.XXX
-
-1.XXX
 
 
-1.XXX
+🔗 Zigbee定位软件
+
+🔗 割胶电机监测控制软件
 
 
-1.XXX
+🔗 流量压力传感器监测软件
 
-1.XXX
+🔗 物联网实验客..." />
+  <meta property="og:title" content="QT上位机软件 - bytecat">
+  <meta property="og:description" content="🔗 传感器挂箱客户端
 
-1.XXX
+🔗 红外热成像采集软件
 
-1.XXX
 
-1.XXX
+🔗 LoRa多节点通讯测试系统
 
-1.XXX
 
-1.XXX
-1.XXX
-1.XXX..." />
-    <meta name="keywords" content="" />
-  </head>
-  <body>
-    <div id="app" class="main">
+🔗 机械臂实验控制平台
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://bytecat-cc.github.io/index.html">
-        <img src="https://bytecat-cc.github.io/index.html/images/avatar.png?v=1684244401606" class="site-logo">
-        <h1 class="site-title">Grideaasas</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
+
+
+
+🔗 Zigbee定位软件
+
+🔗 割胶电机监测控制软件
+
+
+🔗 流量压力传感器监测软件
+
+🔗 物联网实验客..." />
+  <meta property="og:type" content="articles">
+  <meta property="og:url" content="https://bytecat-cc.github.io/post/bcat/" />
+  <meta property="og:image" content="https://bytecat-cc.github.io/post-images/bcat.jpg">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200">
+  <meta name="twitter:title" content="QT上位机软件 - bytecat">
+  <meta name="twitter:description" content="🔗 传感器挂箱客户端
+
+🔗 红外热成像采集软件
+
+
+🔗 LoRa多节点通讯测试系统
+
+
+🔗 机械臂实验控制平台
+
+
+
+
+🔗 Zigbee定位软件
+
+🔗 割胶电机监测控制软件
+
+
+🔗 流量压力传感器监测软件
+
+🔗 物联网实验客...">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://bytecat-cc.github.io/post/bcat/">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+ 
+  
+
+  
+</head>
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <a href="https://bytecat-cc.github.io" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
+      bytecat
+    </a>
+    <div class="max-w-4xl w-full mx-auto">
+      <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
+        <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
+          QT上位机软件
+        </h1>
+        
+          <img src="https://bytecat-cc.github.io/post-images/bcat.jpg" alt="QT上位机软件" class="block w-full mb-8">
+        
+        <div class="mb-8 flex flex-wrap">
+          <div class="text-gray-400 text-sm mr-4">2023-05-03 · 1 min read</div>
+          
+            <a href="https://bytecat-cc.github.io/tag/ABO1XGO8k/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
+              <i class="ri-hashtag"></i>
+              Qt
+            </a>
+          
+            <a href="https://bytecat-cc.github.io/tag/NvKUooBV3/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
+              <i class="ri-hashtag"></i>
+              C/C++
+            </a>
+          
+        </div>
+        <div class="markdown mb-8" v-pre>
+          <p>🔗 <strong>传感器挂箱客户端</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210067305.png" alt="" loading="lazy"><br>
+🔗 <strong>红外热成像采集软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312471953.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210185928.png" alt="" loading="lazy"><br>
+🔗 <strong>LoRa多节点通讯测试系统</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312501902.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312400005.png" alt="" loading="lazy"><br>
+🔗 <strong>机械臂实验控制平台</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312538810.jpg" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312550346.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312557478.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312563339.png" alt="" loading="lazy"><br>
+🔗 <strong>Zigbee定位软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210087731.png" alt="" loading="lazy"><br>
+🔗 <strong>割胶电机监测控制软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210103786.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312588881.png" alt="" loading="lazy"><br>
+🔗 <strong>流量压力传感器监测软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210110481.png" alt="" loading="lazy"><br>
+🔗 <strong>物联网实验客户端（树莓派）</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684313026456.jpg" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312628591.png" alt="" loading="lazy"><br>
+🔗 <strong>多姿态数据监测软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312654260.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684295077435.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312669984.png" alt="" loading="lazy"><br>
+🔗 <strong>生物医疗传感器监测软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312706486.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210238607.png" alt="" loading="lazy"><br>
+🔗 <strong>光照监测控制软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210255172.png" alt="" loading="lazy"><br>
+🔗 <strong>居家门禁实验软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210261541.png" alt="" loading="lazy"><br>
+🔗 <strong>无刷电机调速控制软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312805317.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312818506.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684312764991.png" alt="" loading="lazy"><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210309488.png" alt="" loading="lazy"><br>
+🔗 <strong>物联网云服务控制监测软件</strong><br>
+<img src="https://bytecat-cc.github.io/post-images/1684210327944.png" alt="" loading="lazy"></p>
+
+        </div>
+        <!-- Share to Twitter, Weibo, Telegram -->
+        <div class="flex items-center">
+          <div class="mr-4 flex items-center">
+            <i class="ri-share-forward-line text-gray-500"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTwitter">
+            <i class="ri-twitter-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex" @click="shareToWeibo">
+            <i class="ri-weibo-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTelegram">
+            <i class="ri-telegram-line"></i>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  测试使用<a href="www.bcatt.com"target="_blank"></a>
+</footer>
+    </div>
+
+    <!-- TOC Container -->
+    <div class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight" @click="showToc = true">
+      <i class="ri-file-list-line"></i>
+    </div>
+
+    <div class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast" :class="{ '-mr-64': !showToc }">
+      <div class="flex mb-4 justify-end">
+        <div class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast" @click="showToc = false">
+          <i class="ri-close-line text-lg"></i>
+        </div>
+      </div>
+      <div class="post-toc-container">
+        
       </div>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-        
-          <a href="https://bytecat-cc.github.io/index.html/post/bcat" class="site-nav">
-            bcat
-          </a>
-        
-      
-        
-          <a href="https://bytecat-cc.github.io/index.html/post/nnnn" class="site-nav">
-            nmnm
-          </a>
-        
-      
+
+    <!-- Back to top -->
+    <div class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200" @click="backToUp" v-show="scrolled">
+      <i class="ri-arrow-up-line"></i>
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe. 
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg">
+  </div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
     </div>
-    <div class="site-description">
-      温故而知新saxxxasaasas
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://bytecat-cc.github.io/index.html/atom.xml" target="_blank">RSS</a>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter">
+        </div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip">
+        </div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center">
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://bytecat-cc.github.io/media/scripts/main.js"></script>
+  
+  <!-- Code Highlight -->
+  
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">BCAT </h2>
-            <div class="post-date">2023-05-12</div>
-            
-            <div class="post-content" v-pre>
-              <p>1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210055277.png" alt="" loading="lazy"><br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210067305.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210173728.png" alt="" loading="lazy"><br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210185928.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210087731.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210095521.png" alt="" loading="lazy"><br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210103786.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210110481.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210134171.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210202769.png" alt="" loading="lazy"><br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210215236.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210238607.png" alt="" loading="lazy"><br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210244887.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210255172.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210261541.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210283659.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210309488.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210314631.png" alt="" loading="lazy"><br>
-1.XXX<br>
-<img src="https://bytecat-cc.github.io/index.html/post-images/1684210327944.png" alt="" loading="lazy"><br>
-1.XXX</p>
-<p>1.XXX<br>
-1.XXX</p>
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+  <script>
+    //拿到预览框架，也就是上面的html代码
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    //定义图片数组变量
+    var imgitems;
+    /**
+    * 用于显示预览界面
+    * @param index 图片数组下标
+    */
+    function viewImg(index) {
+      //其它选项这里不做过多阐述，详情见官网
+      var pswpoptions = {
+        index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+        bgOpacity: 0.7, // 背景透明度，0-1
+        maxSpreadZoom: 3, // 缩放级别，不要太大
+      };
+      //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgitems, pswpoptions);
+      gallery.init()
+    }
+    /**
+    * 用于添加图片点击事件
+    * @param img 图片元素
+    * @param index 所属下标（在imgitems中的位置）
+    */
+    function addImgClick(img, index) {
+      img.onclick = function() {
+        viewImg(index)
+      }
+    }
+    /**
+    * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+    * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+    * 异步加载图片可在图片元素创建完成后调用此方法
+    */
+    function initImg() {
+      //重置图片数组
+      imgitems = [];
+      //查找class:markdown 下的所有img元素并遍历
+      var imgs = document.querySelectorAll('.markdown img');
+      for (var i = 0; i < imgs.length; i++) {
+        var img = imgs[i];
+        //本站相册初始为loading图片，真实图片放在data-src
+        var ds = img.getAttribute("data-src");
+        //创建image对象，用于获取图片宽高
+        var imgtemp = new Image();
+        //判断是否存在data-src
+        if (ds != null && ds.length > 0) {
+          imgtemp.src = ds
+        } else {
+          imgtemp.src = img.src
+        }
+        //判断是否存在缓存
+        if (imgtemp.complete) {
+          var imgobj = {
+            "src": imgtemp.src,
+            "w": imgtemp.width,
+            "h": imgtemp.height,
+          };
+          imgitems[i] = imgobj;
+          addImgClick(img, i);
+        } else {
+          console.log('进来了2')
+          imgtemp.index = i;
+          imgtemp.img = img;
+          imgtemp.onload = function() {
+            var imgobj = {
+              "src": this.src,
+              "w": this.width,
+              "h": this.height,
+            };
+            //不要使用push，因为onload前后顺序会不同
+            imgitems[this.index] = imgobj
+            //添加点击事件
+            addImgClick(this.img, this.index);
+          }
+        }
+      }
+    }
+    //初始化
+    initImg();
+  </script>
+  
+  
+</body>
 
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://bytecat-cc.github.io/index.html/post/hello-gridea/">
-                  <h3 class="post-title">
-                    Hello Gridea
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
-
-
-  </body>
 </html>
